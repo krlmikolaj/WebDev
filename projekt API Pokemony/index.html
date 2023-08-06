@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <main class="catalog">
+       <header class="catalog_header">
+           <h1 class="catalog_heading"><span class="catalog_heading--primary">Pokemon </span> catalog</h1>
+       </header>
+       <section class="catalog_content" data-content>
+           
+       </section>
+       <footer class="catalog_footer">
+           <button class="catalog_button" data-button>Load more</button>
+           <div class="catalog_loader hide" data-loader>Loading...</div>
+       </footer>
+   </main>
+   
+    <script src="script.js"></script> 
+    <script>
+   const catalog = new PokemonTCGCatalog();
+      catalog.initializeCatalog();
+    </script>
+</body>
+</html>
