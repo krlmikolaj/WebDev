@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        section {
+            position: relative;
+            height: 100vh;
+            color: white;
+            font-family: arial;
+            font-size: 60px;
+        }
+        
+        .s1 {
+            background-color: darkcyan;
+        }
+        .s2 {
+            background-color: royalblue;
+        }
+       section div {
+           position: absolute;
+           top: 30px;
+           right: 30px;
+            width: 30px;
+           height: 30px;
+           border: 5px solid white;
+            border-radius: 50%;
+        }
+        
+        .s1 h1 {
+            position: absolute;
+            top: 40%;
+            left: -150%;
+            transition: 1.3s ease;
+        }
+        .s1 div:hover+h1 {
+            left: 10%
+        }
+        
+        .s2 h1 {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .s2 div:hover+h1 {
+            opacity: 1;
+        }
+    
+        div {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="s1">
+        <div></div>
+        <h1>TYTUL PIERWSZY</h1>
+
+    </section>
+
+    <section class="s2">
+        <div></div>
+        <h1>TYTUL DRUGI</h1>
+
+    </section>
+
+
+
+
+</body></html>
