@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("CustomFont.eot");
+    src: url("CustomFont.woff") format("woff"),
+        url("CustomFont.otf") format("opentype"),
+        url("CustomFont.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: 'neurial_groteskregular';
+    src: url('neurialgrotesk-regular-webfont.woff2') format('woff2'),
+        url('neurialgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.header1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/husky.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main1 {
+
+    height: 75vh;
+    background: rgb(222, 176, 137);
+    background: linear-gradient(90deg,  rgba(49, 49, 51, 1) 0%, rgba(222, 176, 137, 1) 100%);
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.section1 {
+    height: 100vh;
+    background: rgb(50, 49, 51);
+    background: linear-gradient(270deg, rgba(50, 49, 51, 1) 0%, rgba(15, 16, 24, 1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer1 {
+    height: 100vh;
+    background: rgb(26, 35, 44);
+    background: linear-gradient(360deg, rgba(26, 35, 44, 1) 0%, rgba(14, 16, 22, 1) 100%);
+}
+
+.s1 {
+    height: 100vh;
+    background-color: darkred
+}
+
+.naglowek {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0 2px 1px 1px #333333;
+    box-sizing: border-box;
+
+
+}
+
+.right {
+    position: relative;
+    top: 0;
+    right: 0px;
+    border-right: 23px solid white;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border-left: 23px solid white;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+
+}
+
+.portf {
+    position: absolute;
+    top: 7px;
+    color: white;
+    font-family: "CustomFont";
+    font-weight: 400;
+    right: 45.3%;
+    letter-spacing: 5px;
+    font-size: 21px;
+
+
+
+}
+
+.mk {
+    position: relative;
+    color: white;
+    font-family: "CustomFont";
+    bottom: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    left: 0.4%
+}
+
+.p {
+    font-family: 'neurial_groteskregular';
+    color: white;
+    position: absolute;
+    left: 39vh;
+    top: 0.46%;
+    font-size: 20px;
+    box-shadow: -4px -3px 0 1px;
+    transform: skew(-30deg);
+    padding: 11px 10px;
+    cursor: pointer;
+
+
+}
+
+.projects {
+    display: block;
+    transform: skew(30deg);
+
+}
+
+.c {
+    font-family: 'neurial_groteskregular';
+    color: white;
+    position: absolute;
+    right: 39vh;
+    top: 0.46%;
+    font-size: 20px;
+    box-shadow: 4px -3px 0 1px;
+    transform: skew(30deg);
+    padding: 11px 10px;
+    cursor: pointer;
+}
+
+.contact {
+    display: block;
+    transform: skew(-30deg);
+}
+
+a {
+    position: absolute;
+    font-size: 31px;
+    text-decoration: none;
+    color: white;
+    right: 300px;
+    top: 50%;
+    /*box-shadow: 0 0 0 7px black, 4px 4px 4px 7px white;*/
+    box-shadow: 0 0 0 8px black, 0 0 0 10px white;
+    padding: 20px 50px;
+    transform: skew(-30deg);
+    overflow: hidden;
+    font-family: 'neurial_groteskregular';
+}
+
+.button {
+    display: block;
+    transform: skew(30deg);
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 17px;
+    background-color: white;
+    transition: 0.35s;
+}
+
+a:hover::before {
+    left: 100%;
+}
+
+nav {
+
+    position: fixed;
+    top: 37%;
+    bottom: 37%;
+    left: 0;
+    width: 40px;
+    padding: 2px;
+
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 9px;
+    
+}
+
+nav li {
+    height: 11px;
+    width: 11px;
+    background-color: black;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.active {
+    box-shadow: 0 0 0 1.5px white;
+}
+
+.what {
+    position: absolute;
+    top: 105%;
+    font-size: 50px;
+    left: 44.5%;
+    font-family: 'neurial_groteskregular';
+    font-weight: 600;
+    color: white;
+
+}
+
+.question {
+    position: absolute;
+}
+
+
+.questionimg {
+    position: absolute;
+    top: 85vh;
+    left: 20vh;
+    width: 30vh;
+    border-radius: 50%
+}
+
+.code {
+    position: absolute;
+    width: 50px;
+    top: 120vh;
+    left: 80vh;
+
+
+}
+
+.code2 {
+    position: absolute;
+    width: 50px;
+    top: 120vh;
+    left: 135vh;
+}
+
+.code3 {
+    position: absolute;
+    width: 50px;
+    top: 145vh;
+    left: 80vh;
+}
+
+.code4 {
+    position: relative;
+    width: 50px;
+    top: 45vh;
+    left: 135vh;
+
+
+}
+
+.p1 {
+
+    font-size: 20px;
+    position: relative;
+    top: 20vh;
+    left: 85vh;
+    width: 30vh;
+    color: white;
+    font-family: 'neurial_groteskregular';
+
+
+
+}
+
+.p2 {
+    font-size: 20px;
+    position: relative;
+    top: 14.7vh;
+    left: 140vh;
+    width: 30vh;
+    color: white;
+    font-family: 'neurial_groteskregular';
+}
+
+.p3 {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 85vh;
+    width: 30vh;
+    font-family: 'neurial_groteskregular';
+    top: 35vh;
+}
+
+.p4 {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 85vh;
+    width: 30vh;
+    font-family: 'neurial_groteskregular';
+    top: 29.6vh;
+    left: 140vh;
+}
+
+
+.textProject {
+    position: absolute;
+    font-family: 'neurial_groteskregular';
+    font-size: 50px;
+    color: white;
+    left: 45%;
+    top: 185vh;
+    height: 50px;
+    font-weight: 600;
+}
+
+.carousel-container {
+    width: 60%;
+    margin: auto;
+    border: 5px solid black;
+    position: absolute;
+    top: 200vh;
+    left: 20%;
+    display: flex;
+overflow: hidden;
+
+}
+
+.slide {
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    
+
+}
+
+#prevBtn {
+    position: absolute;
+    top: 25vh;
+    z-index: 10;
+    left: 3%;
+    font-size 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#nextBtn {
+    position: absolute;
+    top: 25vh;
+    z-index: 10;
+    right: 3%;
+    font-size 30px;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.btns:disabled {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+}
+
+
+
+
+.contactMe {
+    position: absolute;
+    color: white;
+    font-family: 'neurial_groteskregular';
+    font-size: 70px;
+    color: white;
+    left: 36.5%;
+    top: 296vh;
+    height: 50px;
+    font-weight: 600;
+
+}
+
+.text1 {
+    position: relative;
+    color: white;
+    font-family: 'neurial_groteskregular';
+    font-size: 25px;
+    top: 33vh;
+    left: 29%;
+    width: 90vh;
+}
+
+.text2 {
+    position: relative;
+    color: white;
+    font-family: 'neurial_groteskregular';
+    font-size: 25px;
+    top: 35vh;
+    left: 34%;
+    width: 90vh;
+}
+
+.contactBtn {
+    position: relative;
+    color: black;
+    font-family: 'neurial_groteskregular';
+    font-size: 25px;
+    left: 86.5vh;
+    top: 47vh;
+    width: 190px;
+    font-weight: 600;
+    background-color: #CFEC2C;
+    border: 18px solid #CFEC2C;
+    border-radius: 27px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.contactBtn:hover {
+    background-color: white;
+    border: 21px solid white;
+
+}
+
+.aboutFoot {
+    position: absolute;
+    font-family: 'neurial_groteskregular';
+    color: #C0C0C0;
+    font-size: 20px;
+    left: 75vh;
+    top: 360vh;
+    cursor: pointer;
+}
+
+.contactFoot {
+    position: absolute;
+    font-family: 'neurial_groteskregular';
+    color: #C0C0C0;
+    font-size: 20px;
+    left: 115vh;
+    top: 360vh;
+    cursor: pointer;
+}
+
+.projectFoot {
+    position: absolute;
+    font-family: 'neurial_groteskregular';
+    color: #C0C0C0;
+    font-size: 20px;
+    left: 94vh;
+    top: 360vh;
+    cursor: pointer;
+}
+
+.King {
+    position: absolute;
+    color: #9c9a9a;
+    font-size: 14px;
+    font-family: 'neurial_groteskregular';
+    left: 94.3vh;
+    top: 368vh;
+}
+
+
+/*------------ contact ----------*/
+
+#contact-form {
+    margin: 5% 0;
+}
+
+.contact .icon-title {
+    margin-top: 10px;
+    color: #000;
+}
+
+#contact-form ul {
+    list-style: none;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+
+#contact-form li:last-of-type {
+    border-bottom: none;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 22px;
+    color: white;
+    width: 50%;
+    font-family: 'neurial_groteskregular';
+    padding: 10px;
+    
+}
+
+
+#contact-form input, #contact-form textarea{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: white;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.textarea {
+    border-bottom: 1px solid white;
+    
+}
+
+.send {
+    position: relative;
+     background: none;
+      border: .3pt solid white;
+      text-transform: uppercase !important;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+      padding: 18px 36px;
+    color: white;
+    left: 40%;
+    
+}
+
+.row {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 320vh;
+}

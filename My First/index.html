@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikołaj Król</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="font/neurialGrotesk/stylesheet.css">
+    <script src="https://kit.fontawesome.com/72e77aa6cf.js" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header1">
+        <div class="naglowek">
+            <div class="right"></div>
+            <div class="left"></div>
+            <span class="portf">PORTFOLIO</span>
+            <span class="mk">Mikołaj Król</span>
+            <p class="p"><span class="projects">PROJECTS</span></p>
+            <p class="c"><span class="contact">CONTACT</span></p>
+
+
+        </div>
+
+        <a href="#"><span class="button">ABOUT</span></a>
+
+    </header>
+    <nav>
+        <ul>
+            <li class="dot1"></li>
+            <li class="dot2"></li>
+            <li class="dot3"></li>
+            <li class="dot4"></li>
+        </ul>
+    </nav>
+    <main class="main1">
+
+        <p class="what">What I do</p>
+        <nav class="question">
+            <img class="questionimg" src="img/question2.png">
+        </nav>
+
+        <section class="icon">
+            <img class="code" src="img/code.png">
+            <img class="code2" src="img/code.png">
+            <img class="code3" src="img/code.png">
+            <img class="code4" src="img/code.png">
+            <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </section>
+    </main>
+    
+    
+    <section class="section1">
+        <p class="textProject">Projects</p>
+
+        <div class="carousel-container">
+           <div class="btns">
+            <i class="fas fa-arrow-right" id="nextBtn" data-button-next></i>
+            <i class="fas fa-arrow-left" id="prevBtn" data-button-prev></i>
+            </div>
+            <figure class="slide" data-slide></figure>
+            
+        
+            
+        </div>
+
+
+    </section>
+
+    <footer class="footer1">
+
+        <p class="contactMe">Contact with me</p>
+        <p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis.</p>
+        <p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!--<p class="contactBtn">Contact me</p>
+        <p class="aboutFoot">About</p>
+        <p class="projectFoot">Projects</p>
+        <p class="contactFoot">Contact</p> -->
+        <p class="King">@2020 Król</p>
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-6">
+                <form action="" name='contact-form' id='contact-form' method='POST'>
+
+
+                    <ul>
+                        <li>
+                            <label for="contact-name">Name :</label>
+                            <div class="textarea">
+                                <input type="text" name="contact-name" id='contact-name' value="" required>
+
+                            </div>
+                        </li>
+                        <br>
+
+                        <li>
+
+                            <label for="contact-name">E-mail :</label>
+                            <div class="textarea">
+                                <input type="text" name="contact-name" id='contact-name' value="" required>
+
+                            </div>
+                        </li>
+                        <li>
+                            <label for="contact-name">Message :</label>
+                            <div class="textarea">
+                                <textarea name="contact-project" id='contact-project' rows="6" required></textarea>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+
+                    <button type="submit" name='contact-submit' id="contact-submit" class="send">Send Message</button>
+
+
+                </form>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+        const imageArr = [
+            './img/project1.jpg',
+            './img/project2.jpg',
+            './img/project3.jpg',
+            './img/project4.jpg',
+            './img/project5.jpg',
+        ]
+
+        const slider = new Slider(imageArr);
+        slider.initializeSlider();
+    </script>
+</body></html>
