@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h1 {
+            font-size: 60px;
+            margin: 40px;
+            font-family: monospace;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+        }
+        
+        h1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-left: 3px solid black;
+            animation: cursor .6s infinite linear, typing 4s steps(12, start);
+        }
+        
+        
+        @keyframes cursor {
+            0% {
+                border-color: transparent;
+            }
+            10% {
+                border-color: transparent;
+            }
+            25% {
+                border-color: black;
+            }
+            75% {
+                border-color: black;
+            }
+            90% {
+                border-color: transparent;
+            }
+            100% {
+                border-color: transparent;
+            }
+        }
+    
+        @keyframes typing {
+            100% {
+                left: 100%;
+            }
+        }
+    
+    
+    
+    </style>
+    
+</head>
+
+<body>
+    <h1>Dzień dobry!</h1>
+</body>
+</html>
